@@ -14,6 +14,12 @@ git 'git://github.com/refinery/refinerycms-i18n.git', :branch => 'master' do
   gem 'refinerycms-i18n'
 end
 
+git 'git://github.com/sunspot/sunspot.git', :branch => 'master' do
+  gem 'sunspot'
+  gem 'sunspot_rails'
+  gem 'sunspot_solr'
+end
+
 group :development, :test do
   require 'rbconfig'
 
