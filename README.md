@@ -1,6 +1,7 @@
 # Refinery::Solr
 
 [![Gem Version](https://badge.fury.io/rb/refinerycms-solr.png)](http://badge.fury.io/rb/refinerycms-solr)
+[![Build Status](https://travis-ci.org/ixmedia/refinerycms-solr.png?branch=master)](https://travis-ci.org/ixmedia/refinerycms-solr)
 
 Refinery CMS and Solr plugin.
 
