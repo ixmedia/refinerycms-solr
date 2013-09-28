@@ -8,6 +8,26 @@ require File.expand_path("../dummy/config/environment", __FILE__)
 require 'rspec/rails'
 require 'capybara/rspec'
 
+require 'socket'
+require 'timeout'
+
+def is_port_open?(ip, port)
+  begin
+    Timeout::timeout(1) do
+      begin
+        s = TCPSocket.new(ip, port)
+        s.close
+        return true
+      rescue Errno::ECONNREFUSED, Errno::EHOSTUNREACH
+        return false
+      end
+    end
+  rescue Timeout::Error
+  end
+
+  return false
+end
+
 Rails.backtrace_cleaner.remove_silencers!
 
 RSpec.configure do |config|
@@ -18,7 +38,9 @@ RSpec.configure do |config|
 
   config.before(:suite) do
     system "bundle exec rake -f #{File.expand_path("../dummy/Rakefile", __FILE__)} sunspot:solr:start"
-    sleep 5
+    while (!is_port_open?("localhost", 8982))
+      sleep(1)
+    end
   end
 
   config.after(:suite) do
