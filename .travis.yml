@@ -1,0 +1,12 @@
+language: ruby
+bundler_args: --without development
+before_script:
+  - "bundle exec rake refinery:solr:dummy_app"
+
+rvm:
+  - 2.0.0
+
+notifications:
+  email: true
+
+script: "bundle exec rake spec"
