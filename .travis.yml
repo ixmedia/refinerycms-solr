@@ -4,9 +4,13 @@ before_script:
   - "bundle exec rake refinery:solr:dummy_app"
 
 rvm:
+  - 1.9.3
   - 2.0.0
 env:
   - "RAILS_VERSION=4.0.0"
+  - DB=sqlite
+  - DB=mysql
+  - DB=postgresql
 
 notifications:
   email: true
