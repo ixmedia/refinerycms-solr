@@ -27,8 +27,6 @@ group :development, :test do
   require 'rbconfig'
 
   gem 'sqlite3', :platform => :ruby
-  gem 'mysql2', :platform => :ruby
-  gem 'pg', :platform => :ruby
 end
 
 # Refinery/rails should pull in the proper versions of these
