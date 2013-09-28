@@ -6,7 +6,7 @@ require 'refinery/solr/version'
 Gem::Specification.new do |spec|
   spec.name          = "refinerycms-solr"
   spec.version       = Refinery::Solr::Version.to_s
-  spec.authors       = ["Jean-François Chaput"]
+  spec.authors       = ["Jeff Chaput"]
   spec.email         = ["jfc@artkeep.net"]
   spec.description   = %q{An extension to handle the integration of Refinery CMS and Solr}
   spec.summary       = %q{Refinery CMS Solr plugin}
