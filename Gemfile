@@ -10,6 +10,10 @@ git 'git://github.com/refinery/refinerycms.git', :branch => 'master' do
   end
 end
 
+git 'git://github.com/refinery/refinerycms-i18n.git', :branch => 'master' do
+  gem 'refinerycms-i18n'
+end
+
 group :development, :test do
   require 'rbconfig'
 
