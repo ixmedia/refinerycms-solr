@@ -5,6 +5,8 @@ before_script:
 
 rvm:
   - 2.0.0
+env:
+  - "RAILS_VERSION=4.0.0"
 
 notifications:
   email: true
