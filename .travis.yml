@@ -9,10 +9,11 @@ rvm:
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-  - "RAILS_VERSION=4.0.0"
-  - DB=sqlite3
-  - DB=mysql
-  - DB=postgresql
+    - "RAILS_VERSION=4.0.0"
+  matrix:
+    - DB=sqlite3
+    - DB=mysql
+    - DB=postgresql
 
 notifications:
   email: true
