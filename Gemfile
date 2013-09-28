@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gemspec
 
 git 'git://github.com/refinery/refinerycms.git', :branch => 'master' do
-  gem 'refinerycms'
+  gem 'refinerycms', '~> 3.0.0.dev'
 
   group :development, :test do
     gem 'refinerycms-testing'
@@ -11,7 +11,7 @@ git 'git://github.com/refinery/refinerycms.git', :branch => 'master' do
 end
 
 git 'git://github.com/refinery/refinerycms-i18n.git', :branch => 'master' do
-  gem 'refinerycms-i18n'
+  gem 'refinerycms-i18n', '~> 3.0.0.dev'
 end
 
 git 'git://github.com/sunspot/sunspot.git', :branch => 'master' do
