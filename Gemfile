@@ -37,3 +37,4 @@ end
 
 gem 'jquery-rails'
 gem 'protected_attributes'
+gem 'coveralls', require: false
