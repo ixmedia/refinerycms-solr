@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Refinery::Solr::Version.to_s
   spec.authors       = ["Jean-François Chaput"]
   spec.email         = ["jfc@artkeep.net"]
-  spec.description   = %q{An extension to handle the integration of Refinery CMS and Sunspot}
-  spec.summary       = %q{Refinery CMS Sunspot plugin}
+  spec.description   = %q{An extension to handle the integration of Refinery CMS and Solr}
+  spec.summary       = %q{Refinery CMS Solr plugin}
   spec.homepage      = "http://open.ixmedia.com"
   spec.license       = "MIT"
 
