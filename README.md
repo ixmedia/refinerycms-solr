@@ -6,7 +6,7 @@
 [![Code Climate](https://codeclimate.com/github/ixmedia/refinerycms-solr.png)](https://codeclimate.com/github/ixmedia/refinerycms-solr)
 [![Coverage Status](https://coveralls.io/repos/ixmedia/refinerycms-solr/badge.png)](https://coveralls.io/r/ixmedia/refinerycms-solr)
 
-Refinery CMS and Solr plugin. Based on [https://github.com/refinery/refinerycms-acts-as-indexed](Refinery CMS ActsAsIndexed integration plugin).
+Refinery CMS and Solr plugin. Based on [Refinery CMS ActsAsIndexed integration plugin](https://github.com/refinery/refinerycms-acts-as-indexed).
 
 ## Installation
 
