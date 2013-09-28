@@ -79,5 +79,4 @@ group :assets do
   gem 'uglifier'
 end
 
-gem "protected_attributes"
 gem 'jquery-rails'
