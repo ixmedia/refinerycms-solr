@@ -20,6 +20,9 @@ git 'git://github.com/sunspot/sunspot.git', :branch => 'master' do
   gem 'sunspot_solr'
 end
 
+gem 'globalize3', github: 'svenfuchs/globalize3', branch: 'rails4'
+gem 'seo_meta', github: 'parndt/seo_meta', branch: 'master'
+
 group :development, :test do
   require 'rbconfig'
 
@@ -80,3 +83,4 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'protected_attributes'
