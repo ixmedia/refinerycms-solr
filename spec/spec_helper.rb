@@ -18,7 +18,7 @@ RSpec.configure do |config|
 
   config.before(:suite) do
     system "bundle exec rake -f #{File.expand_path("../dummy/Rakefile", __FILE__)} sunspot:solr:start"
-    sleep 2
+    sleep 5
   end
 
   config.after(:suite) do
