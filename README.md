@@ -1,5 +1,7 @@
 # Refinery::Solr
 
+[![Gem Version](https://badge.fury.io/rb/refinerycms-solr.png)](http://badge.fury.io/rb/refinerycms-solr)
+
 Refinery CMS and Solr plugin.
 
 ## Installation
