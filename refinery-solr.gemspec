@@ -24,10 +24,12 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
 
   spec.add_dependency    'refinerycms-core',      '~> 3.0.0.dev'
+
+  spec.add_dependency    'sunspot',               '~> 2.1.0'
   spec.add_dependency    'sunspot_rails',         '~> 2.1.0'
   spec.add_dependency    'sunspot_solr',          '~> 2.1.0'
+  spec.add_dependency    'sunspot_cell',          '~> 0.1.2'
 
   spec.add_dependency    'seo_meta',              '~> 1.4.0'
   spec.add_dependency    'friendly_id',           '~> 5.0.0.rc1'
-  spec.add_dependency    'globalize3',            '~> 0.3.0'
 end

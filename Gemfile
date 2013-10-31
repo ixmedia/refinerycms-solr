@@ -14,17 +14,10 @@ git 'git://github.com/refinery/refinerycms-i18n.git', :branch => 'master' do
   gem 'refinerycms-i18n'
 end
 
-git 'git://github.com/sunspot/sunspot.git', :branch => 'master' do
-  gem 'sunspot'
-  gem 'sunspot_rails'
-end
-
-gem 'sunspot_cell', :git => 'git://github.com/zheileman/sunspot_cell.git'
-
-group :development, :test do
-  gem 'sunspot_cell_jars', :git => 'https://github.com/mrcsparker/sunspot_cell_jars.git'
-  gem 'sunspot_solr', :git => "https://github.com/mrcsparker/sunspot.git"
-end
+gem "sunspot", "~> 2.1.0"
+gem "sunspot_rails", "~> 2.1.0"
+gem "sunspot_solr", "~> 2.1.0"
+gem "sunspot_cell", "~> 0.1.2"
 
 gem 'globalize', "~> 4.0.0.alpha.1"
 gem 'seo_meta', github: 'parndt/seo_meta', branch: 'master'

@@ -8,5 +8,6 @@ module Refinery
   end
 end
 
+require 'refinery/sunspot/rich_document'
 require 'refinery/solr/engine'
 require 'refinery/solr/active_record'
