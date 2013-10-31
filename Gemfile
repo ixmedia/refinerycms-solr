@@ -17,7 +17,13 @@ end
 git 'git://github.com/sunspot/sunspot.git', :branch => 'master' do
   gem 'sunspot'
   gem 'sunspot_rails'
-  gem 'sunspot_solr'
+end
+
+gem 'sunspot_cell', :git => 'git://github.com/zheileman/sunspot_cell.git'
+
+group :development, :test do
+  gem 'sunspot_cell_jars', :git => 'https://github.com/mrcsparker/sunspot_cell_jars.git'
+  gem 'sunspot_solr', :git => "https://github.com/mrcsparker/sunspot.git"
 end
 
 gem 'globalize3', github: 'svenfuchs/globalize3', branch: 'rails4'
