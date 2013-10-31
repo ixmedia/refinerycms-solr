@@ -26,7 +26,7 @@ group :development, :test do
   gem 'sunspot_solr', :git => "https://github.com/mrcsparker/sunspot.git"
 end
 
-gem 'globalize3', github: 'svenfuchs/globalize3', branch: 'rails4'
+gem 'globalize', "~> 4.0.0.alpha.1"
 gem 'seo_meta', github: 'parndt/seo_meta', branch: 'master'
 
 group :development, :test do
